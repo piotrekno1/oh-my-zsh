@@ -14,9 +14,9 @@ BB=$fg_bold[blue]
 RESET=$reset_color
 
 if [ "$(whoami)" = "root" ]; then
-    PROMPTCOLOR="%{$RB%}" PREFIX="";
+    PROMPTCOLOR="" PREFIX="%{$RB%}#%{$RESET%}";
 else
-    PROMPTCOLOR=R PREFIX="";
+    PROMPTCOLOR="" PREFIX="";
 fi
 
 local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
